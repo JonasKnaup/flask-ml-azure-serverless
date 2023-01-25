@@ -60,7 +60,7 @@ stages:
   jobs:
   - deployment: DeploymentJob
     pool: myAgentPool
-    environment: 'flask-ml-service'
+    environment: $(environmentName)
     strategy:
       runOnce:
         deploy:
